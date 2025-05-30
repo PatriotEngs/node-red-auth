@@ -1,0 +1,24 @@
+services:
+  - name: auth-proxy
+    type: web
+    env: docker
+    plan: free
+    envVars:
+      - key: OAUTH2_PROXY_PROVIDER
+        value: oidc
+      - key: OAUTH2_PROXY_CLIENT_ID
+        value: vYkweoBcNiqiRypKjDHwwUKPYdEZVZt7
+      - key: OAUTH2_PROXY_CLIENT_SECRET
+        value: 7JAu_DHvWT8YELFCq3dlhqeX1QLE1KJk0E7DcRqeY7idKlNV8n43jihAfkpBC2ux
+      - key: OAUTH2_PROXY_COOKIE_SECRET
+        value: AUAFjtLRbq/4+ofmBn+WxiG7df+N/7b/msB5n0uYpKE=
+      - key: OAUTH2_PROXY_OIDC_ISSUER_URL
+        value: dev-am2byzdz53w04zpw.us.auth0.com
+      - key: OAUTH2_PROXY_UPSTREAMS
+        value: https://patriot-c-con-project.onrender.com/ui
+      - key: OAUTH2_PROXY_REDIRECT_URL
+        value: https://patriot-construction-auth.onrender.com/oauth2/callback
+      - key: OAUTH2_PROXY_HTTP_ADDRESS
+        value: 0.0.0.0:4180
+      - key: OAUTH2_PROXY_EMAIL_DOMAINS
+        value: '*'
