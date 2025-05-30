@@ -11,7 +11,7 @@ services:
       - key: OAUTH2_PROXY_CLIENT_SECRET
         value: 7JAu_DHvWT8YELFCq3dlhqeX1QLE1KJk0E7DcRqeY7idKlNV8n43jihAfkpBC2ux
       - key: OAUTH2_PROXY_COOKIE_SECRET
-        value: AUAFjtLRbq/4+ofmBn+WxiG7df+N/7b
+        value: AUAFjtLRbq/4+ofmBn+WxiG7df+N/7bn
       - key: OAUTH2_PROXY_OIDC_ISSUER_URL
         value: dev-am2byzdz53w04zpw.us.auth0.com
       - key: OAUTH2_PROXY_UPSTREAMS
