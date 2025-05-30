@@ -4,6 +4,8 @@ services:
     env: docker
     plan: free
     autoDeploy: true
+    buildFilter:
+      paths: ["Dockerfile"]
     ports:
       - port: 4180
         protocol: tcp
