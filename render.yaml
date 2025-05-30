@@ -6,9 +6,6 @@ services:
     autoDeploy: true
     buildFilter:
       paths: ["Dockerfile"]
-    ports:
-      - port: 4180
-        protocol: tcp
     envVars:
       - key: OAUTH2_PROXY_PROVIDER
         value: oidc
@@ -30,4 +27,3 @@ services:
         value: '*'
       - key: OAUTH2_PROXY_SHOW_DEBUG_ON_ERROR
         value: "true"
-
