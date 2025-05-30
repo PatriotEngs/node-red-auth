@@ -4,6 +4,9 @@ services:
     env: docker
     plan: free
     autoDeploy: true
+    ports:
+      - port: 4180
+        protocol: tcp
     envVars:
       - key: OAUTH2_PROXY_PROVIDER
         value: oidc
@@ -23,6 +26,6 @@ services:
         value: 0.0.0.0:4180
       - key: OAUTH2_PROXY_EMAIL_DOMAINS
         value: '*'
-    ports:
-      - port: 4180
-        protocol: tcp
+      - key: OAUTH2_PROXY_SHOW_DEBUG_ON_ERROR
+        value: "true"
+
