@@ -14,11 +14,11 @@ services:
       - key: OAUTH2_PROXY_COOKIE_SECRET
         value: AUAFjtLRbq/4+ofmBn+WxiG7df+N/7bn
       - key: OAUTH2_PROXY_OIDC_ISSUER_URL
-        value: https://dev-am2byzdz53w04zpw.us.auth0.com/
+        value: https://dev-am2byzdz53w04zpw.us.auth0.com
       - key: OAUTH2_PROXY_UPSTREAMS
         value: https://patriot-c-con-project.onrender.com/ui
       - key: OAUTH2_PROXY_REDIRECT_URL
-        value: https://patriot-construction-auth.onrender.com/oauth2/callback
+        value: https://auth-proxy-u0a5.onrender.com/oauth2/callback
       - key: OAUTH2_PROXY_HTTP_ADDRESS
         value: 0.0.0.0:4180
       - key: OAUTH2_PROXY_EMAIL_DOMAINS
